@@ -49,4 +49,5 @@ class Service(object):
         """
 
         service = utils.objects.ensure_instance(self, router=router)
-        return via(hostname, port, wrappers.Request.application(service), *args, **kwargs)
+        application = wrappers.Request.application(service)
+        return via(hostname, port, application, *args, **kwargs)
