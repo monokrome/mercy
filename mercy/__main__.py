@@ -1,5 +1,4 @@
-def execute():
-    pass
+from mercy.cli import execute
 
 def console_scripts():
     """ Provides functions which should be converted into executables
