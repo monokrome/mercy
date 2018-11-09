@@ -1,8 +1,4 @@
 def execute():
-    # This can be used to easily create an application out of your module by
-    # adding your script here. You can then use `python -m project_module`
-    # (replacing project_module with the name of your module) .
-
     pass
 
 def console_scripts():
@@ -19,11 +15,7 @@ def console_scripts():
     """
 
     return [
-        # Uncomment the following line to make the execute() script into a
-        # installable script which is run at the same name as your package
-        # module:
-
-        # __name__.split('.')[0] + '=' + __name__ + ':' + execute.__name__,
+        __name__.split('.')[0] + '=' + __name__ + ':' + execute.__name__,
     ]
 
 if __name__ == '__main__':
